@@ -31,11 +31,12 @@ html,
 body {
   margin: 0;
   padding: 0;
+  /* background-color: var(--bgr-clr-red); */
 }
 
-main {
+/* main {
   display: block;
-}
+} */
 
 /*BACKGROUNDS*/
 .navBar,
@@ -55,6 +56,65 @@ h1,
 h2,
 h3 {
   color: var(--clr-dark);
+}
+
+/*NAVIGATION BAR*/
+
+.nav {
+  display: block;
+  background-color: var(--bgr-clr-red);
+}
+.test {
+  max-width: 500px;
+  margin: auto;
+}
+.navFlx {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--bgr-clr-red);
+  border-bottom: 1px solid var(--bgr-clr-pale);
+  justify-content: space-between;
+  padding: 0.6rem 0;
+}
+.navFocus a {
+  color: var(--clr-white);
+  font-weight: 600;
+  font-size: 18px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+span button {
+  background-color: var(--text-decoration-pale-bgr);
+  color: var(--clr-white);
+  border: none;
+  border-radius: 6%;
+  font-size: 11px;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  /* opacity: 1; */
+}
+button svg {
+  color: var(--clr-white);
+  opacity: 0.6;
+}
+button {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  opacity: 0.8;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--bgr-clr-white);
+  opacity: 1;
+}
+button:active {
+  /* box-shadow: 0px 1px 1px #de1dde; */
+  box-shadow: 0 4px 15px -6px var(--text-decoration-btn-active);
 }
 
 /*features & downlaods*/
@@ -156,5 +216,10 @@ h2::after {
   h2 {
     font-size: 19px;
     /* letter-spacing: 0.2px; */
+  }
+}
+@media only screen and (max-width: 450px) {
+  span {
+    /*how to remove text and leave only svgs?*/
   }
 }
