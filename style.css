@@ -162,13 +162,19 @@ strong a {
   color: var(--li-strong);
 }
 
-/*ARTICLE AREA*/
+/*-------------------ARTICLE AREA--------------------------*/
 .mainText {
   display: block;
 }
-
-/*footer zone*/
-/*the line*/
+.textContainer {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgr-clr-white);
+}
+/*---------------FOOTER BEGINS----------------------------*/
+/*the separator line*/
 h2::after {
   content: "";
   display: block;
