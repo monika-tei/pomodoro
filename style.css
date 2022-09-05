@@ -64,11 +64,13 @@ h3 {
   display: block;
   background-color: var(--bgr-clr-red);
 }
-.test {
+/* .test {
   max-width: 500px;
   margin: auto;
-}
+} */
 .navFlx {
+  max-width: 500px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   background-color: var(--bgr-clr-red);
@@ -160,6 +162,11 @@ strong a {
   color: var(--li-strong);
 }
 
+/*ARTICLE AREA*/
+.mainText {
+  display: block;
+}
+
 /*footer zone*/
 /*the line*/
 h2::after {
@@ -218,8 +225,10 @@ h2::after {
     /* letter-spacing: 0.2px; */
   }
 }
-@media only screen and (max-width: 450px) {
+
+/*how to remove text and leave only svgs?*/
+/* @media only screen and (max-width: 450px) {
   span {
-    /*how to remove text and leave only svgs?*/
+    
   }
-}
+} */
