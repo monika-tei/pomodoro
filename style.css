@@ -1,0 +1,64 @@
+:root {
+  /*text color*/
+
+  --clr-white: #fcfffe;
+  --clr-dark: #541c1f;
+  --clr-all-p: #785e60;
+  --clr-footer-rights: #a19192;
+  /*background colors*/
+  --bgr-clr-white: #ffffff;
+  --bgr-clr-red: #d95550;
+  --bgr-clr-pale: #e07471;
+  /* --background-color-btn-pale-hover:; */
+  --text-decoration-pale-bgr: #dd6662;
+  --text-decoration-btn-active: #ba5752;
+  /*for un/ordered list decoration*/
+  --li-pale: #e96d73;
+  --li-default: #d95550;
+  /*taskbar area*/
+  --background-color-btn-default: #c74e49;
+  --background-color-btn-hover: #c34c48;
+  /*from og code but idk what they do*/
+  --color: #f05b56;
+  --color: #db524d;
+}
+
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 100%;
+  font-weight: 350;
+}
+.navBar,
+.task-container {
+  background-color: var(--bgr-clr-red);
+}
+
+/*TYPOGRAPHY*/
+h1,
+h2,
+h3 {
+  color: var(--clr-dark);
+}
+p {
+  color: var(--clr-dark);
+}
+
+/*for images if there is any*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
