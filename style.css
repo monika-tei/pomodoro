@@ -187,7 +187,13 @@ h2::after {
   opacity: 0.7;
   padding-top: 0.6rem;
 }
-
+footer {
+  text-align: center;
+}
+.footerContainer {
+  max-width: 500px;
+  margin: auto;
+}
 .footer-pages {
   border-top: 1.5px solid var(--clr-footer-light);
 }
@@ -245,9 +251,6 @@ h2::after {
 
 /*how to remove text and leave only svgs?*/
 /* @media only screen and (max-width: 450px) {
-  span {
-    
-  }
 } */
 
 /*Last merger: navigation to main 00:40*/
