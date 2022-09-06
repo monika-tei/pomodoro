@@ -282,7 +282,7 @@ button:active {
 .task-nr p,
 .task-complete-nr p {
   margin: 0;
-  font-style: bold;
+  font-weight: bold;
   font-size: 18px;
   padding: 0.5rem;
   letter-spacing: 0.2rem;
@@ -314,7 +314,7 @@ button:active {
   justify-content: center;
   align-items: center;
   background-color: var(--background-color-btn-hover);
-  border: 2px dashed var(--bgr-clr-pale);
+  border: 3px dashed var(--bgr-clr-pale);
   margin-top: 1rem;
   cursor: pointer;
   opacity: 0.8;
@@ -323,7 +323,6 @@ button:active {
   background-color: var(--background-color-btn-hover);
   opacity: 1;
 }
-
 .create-new svg {
   color: var(--clr-white);
   opacity: 0.5;
@@ -333,6 +332,24 @@ button:active {
   color: var(--clr-white);
   font-weight: 600;
   opacity: 0.6;
+}
+/*TOMATO LEFT*/
+.pomoEst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  border-top: 1px solid var(--bgr-clr-white);
+  background-color: var(--bgr-clr-pale);
+  padding: 1rem 0;
+}
+.est,
+.act,
+.finish {
+  color: var(--bgr-clr-white);
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /*-------------------ARTICLE AREA--------------------------*/
