@@ -108,6 +108,16 @@ button:active {
   box-shadow: 0 4px 15px -6px var(--text-decoration-btn-active);
 }
 
+/*----SCREEN AREA------*/
+.mainScreen {
+  display: block;
+  background-color: var(--bgr-clr-red);
+}
+.task-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
 /*-------------------ARTICLE AREA--------------------------*/
 .mainText {
   display: block;
