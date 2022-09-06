@@ -190,7 +190,7 @@ button:active {
   padding-bottom: 1.5rem;
 }
 
-/*TASK BAR*/
+/*TASK BAR -GENERAL*/
 .task-screen {
   max-width: 490px;
   margin: auto;
@@ -222,43 +222,69 @@ button:active {
 }
 
 /*new task*/
-.task-focus {
+.task-focus,
+.task-complete {
   background-color: var(--bgr-clr-white);
   border-radius: 4px;
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
+  padding: 0.6rem 0.3rem;
+  box-sizing: border-box;
+  border-left: 5px solid transparent;
+  transition: unset;
+  cursor: pointer;
 }
-.task .btn-taskStatus {
-  border: none;
-  background-color: var(--bgr-clr-white);
+.task-focus:hover,
+.task-complete:hover {
+  border-left: 6px solid lightgrey;
 }
-.btn-taskStatus svg {
-  color: var(--clr-footer-rights);
-  /* opacity: 1; */
+.task-focus:active,
+.task-complete:active {
+  border-left: 6px solid hotpink;
 }
 
-/*Left of the bar*/
+/*Left of the bar-DONE*/
+.task-name {
+  display: flex;
+  align-items: center;
+}
 .task-name p {
+  margin: 0;
   color: var(--clr-dark);
   font-size: 18px;
   font-weight: 500;
 }
-.task-name {
-  display: flex;
+.task-name .btn-taskStatus,
+.task-complete .btn-taskComplete {
+  border: none;
+  background-color: var(--bgr-clr-white);
+  margin: 0 0.5rem;
 }
-.task-nr {
+.btn-taskStatus svg {
+  color: var(--clr-footer-rights);
+}
+.btn-taskComplete svg {
+  color: var(--bgr-clr-red);
+  opacity: 1;
+}
+
+/*Right of the bar-DONE*/
+.task-nr,
+.task-complete-nr {
   display: flex;
   align-items: center;
 }
-.task-nr p {
+.task-nr p,
+.task-complete-nr p {
   margin: 0;
   font-style: bold;
   font-size: 18px;
   padding: 0.5rem;
   letter-spacing: 0.2rem;
 }
-.task-nr .btn-taskNr {
+.task-nr .btn-taskNr,
+.task-complete-nr .btn-complete-taskNr {
   border: none;
   background-color: var(--clr-white);
   /* color: var(--bgr-clr-white); */
@@ -268,15 +294,17 @@ button:active {
   margin: 0 0.2rem;
   cursor: pointer;
 }
-
-.task-nr .btn-taskNr svg {
+.task-nr .btn-taskNr svg,
+.task-complete-nr .btn-complete-taskNr svg {
   color: var(--clr-dark);
 }
-
-.task-nr .btn-taskNr:hover {
+.task-nr .btn-taskNr:hover,
+.task-complete-nr .btn-complete-taskNr:hover {
   background-color: lightgrey;
   opacity: 0.5;
 }
+
+/*CREATE NEW-*/
 
 /*-------------------ARTICLE AREA--------------------------*/
 .mainText {
