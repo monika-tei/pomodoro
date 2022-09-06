@@ -1,6 +1,5 @@
 :root {
   /*text color*/
-
   --clr-white: #fcfffe;
   --clr-dark: #541c1f;
   --clr-all-p: #785e60;
@@ -9,7 +8,8 @@
   /*background colors*/
   --bgr-clr-white: #ffffff;
   --bgr-clr-red: #d95550;
-  --bgr-clr-pale: #e07471;
+  /* --bgr-clr-pale: #e07471; */
+  --bgr-clr-pale: #dd6662;
   /* --background-color-btn-pale-hover:; */
   --text-decoration-pale-bgr: #dd6662;
   --text-decoration-btn-active: #ba5752;
@@ -22,6 +22,8 @@
   /*from og code but idk what they do*/
   --color: #f05b56;
   --color: #db524d;
+  /*fonts*/
+  --color-pink: hotpink;
 }
 
 * {
@@ -47,6 +49,7 @@ body {
 
 h1,
 h2 {
+  /* color: var(--color-pink); */
   color: var(--clr-dark);
 }
 
@@ -63,7 +66,7 @@ h2 {
   display: flex;
   flex-direction: row;
   background-color: var(--bgr-clr-red);
-  border-bottom: 1px solid var(--bgr-clr-pale);
+  border-bottom: 1px solid var(--background-color-btn-hover);
   justify-content: space-between;
   padding: 0.6rem 0;
 }
@@ -114,12 +117,13 @@ button:active {
   background-color: var(--bgr-clr-red);
 }
 .task-container {
-  max-width: 600px;
+  max-width: 500px;
   margin: auto;
 }
 /*see if thisdiv is actually even needed, maybe it can be moved to the screen container directly*/
 .screens {
   text-align: center;
+  padding-top: 1.5rem;
 }
 .screen-container {
   margin: 0;
@@ -138,7 +142,7 @@ button:active {
 }
 .screen-btn > * {
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
   margin: 0 0.5rem;
   background-color: var(--bgr-clr-pale);
   color: var(--clr-white);
@@ -149,7 +153,34 @@ button:active {
   background-color: var(--background-color-btn-hover);
   font-weight: 600;
   opacity: 1;
+  padding: 0.3rem 0.6rem;
 }
+
+/*the digits*/
+.timer-digits {
+  color: var(--bgr-clr-white);
+  font-size: 100px;
+  font-weight: 600;
+}
+
+.timer-start-btn {
+  margin-bottom: 1rem;
+}
+.timer-start-btn button {
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 0.6pt;
+  color: var(--background-color-btn-default);
+  background-color: var(--bgr-clr-white);
+  opacity: 1;
+  padding: 0.8rem 3rem;
+  border-bottom: 4px solid lightgrey;
+  margin-bottom: 1.5rem;
+}
+
 .status {
   text-transform: uppercase;
   font-size: 14px;
@@ -239,7 +270,7 @@ strong a {
   color: var(--li-strong);
 }
 
-/*---------------FOOTER BEGINS----------------------------*/
+/*---------------FOOTER (all good here)------------------------*/
 
 footer {
   text-align: center;
@@ -288,28 +319,40 @@ footer {
   margin: 1rem 0;
 }
 
+/*MQ*/
 @media only screen and (max-width: 650px) {
   body {
-    background-color: lightblue;
+    background-color: var(--bgr-clr-white);
   }
-  main {
+  .mainText {
     margin: 0 1rem;
   }
+  .navFlx {
+    margin: 0 0.5rem;
+  }
+  .timer-digits {
+    font-size: 80px;
+    font-weight: 600;
+  }
+
   article p,
   article li {
     font-size: 16px;
     line-height: 1.4rem;
   }
-  h2 {
-    font-size: 19px;
-    /* letter-spacing: 0.2px; */
+  .task-container {
+    max-width: 400px;
+    margin: auto;
   }
   h1 {
     font-size: 24px;
   }
+  h2 {
+    font-size: 19px;
+  }
 }
 
-/*how to remove text and leave only svgs?*/
+/*how to remove text and leave only svgs for the topnav btns?*/
 @media only screen and (max-width: 450px) {
   .footer-pages a {
     font-size: 14px;
