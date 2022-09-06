@@ -221,6 +221,63 @@ button:active {
   opacity: 1;
 }
 
+/*new task*/
+.task-focus {
+  background-color: var(--bgr-clr-white);
+  border-radius: 4px;
+  margin-top: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+.task .btn-taskStatus {
+  border: none;
+  background-color: var(--bgr-clr-white);
+}
+.btn-taskStatus svg {
+  color: var(--clr-footer-rights);
+  /* opacity: 1; */
+}
+
+/*Left of the bar*/
+.task-name p {
+  color: var(--clr-dark);
+  font-size: 18px;
+  font-weight: 500;
+}
+.task-name {
+  display: flex;
+}
+.task-nr {
+  display: flex;
+  align-items: center;
+}
+.task-nr p {
+  margin: 0;
+  font-style: bold;
+  font-size: 18px;
+  padding: 0.5rem;
+  letter-spacing: 0.2rem;
+}
+.task-nr .btn-taskNr {
+  border: none;
+  background-color: var(--clr-white);
+  /* color: var(--bgr-clr-white); */
+  opacity: 1;
+  border-radius: 3px;
+  padding: 0.3rem 0.2rem;
+  margin: 0 0.2rem;
+  cursor: pointer;
+}
+
+.task-nr .btn-taskNr svg {
+  color: var(--clr-dark);
+}
+
+.task-nr .btn-taskNr:hover {
+  background-color: lightgrey;
+  opacity: 0.5;
+}
+
 /*-------------------ARTICLE AREA--------------------------*/
 .mainText {
   display: block;
