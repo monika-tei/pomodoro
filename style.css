@@ -114,10 +114,56 @@ button:active {
   background-color: var(--bgr-clr-red);
 }
 .task-container {
-  max-width: 1000px;
+  max-width: 600px;
   margin: auto;
 }
-
+/*see if thisdiv is actually even needed, maybe it can be moved to the screen container directly*/
+.screens {
+  text-align: center;
+}
+.screen-container {
+  margin: 0;
+  padding: 0;
+}
+.screen-container {
+  width: 100%;
+  background-color: var(--bgr-clr-pale);
+  border-radius: 5px;
+}
+.screen-btn {
+  display: inline-flex;
+  justify-content: center;
+  margin: 1rem 0;
+  /* margin: 1rem 0.5rem; */
+}
+.screen-btn > * {
+  border: none;
+  border-radius: 2px;
+  margin: 0 0.5rem;
+  background-color: var(--bgr-clr-pale);
+  color: var(--clr-white);
+  font-weight: 100;
+  font-size: 14px;
+}
+.btn-pomodoro {
+  background-color: var(--background-color-btn-hover);
+  font-weight: 600;
+  opacity: 1;
+}
+.status {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.1pt;
+  color: var(--bgr-clr-white);
+  opacity: 0.6;
+  padding-bottom: 0.4rem;
+}
+.currentTask {
+  color: var(--bgr-clr-white);
+  font-weight: 500;
+  font-size: 18px;
+  /*add some padding underneath, or under the whole screen*/
+}
 /*-------------------ARTICLE AREA--------------------------*/
 .mainText {
   display: block;
