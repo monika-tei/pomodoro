@@ -14,6 +14,6 @@
 
 #### 02:06 merged footer to main
 
-🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅
+#### 13:00 basic screen flex:start
 
-###### taskbar dashing{border: 2px dashed rgba (255, 255, 255, 0.4);}
+🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅🍅
