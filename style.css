@@ -56,12 +56,9 @@ h2 {
   display: block;
   background-color: var(--bgr-clr-red);
 }
-/* .test {
-  max-width: 500px;
-  margin: auto;
-} */
+
 .navFlx {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
   display: flex;
   flex-direction: row;
@@ -107,10 +104,42 @@ button:hover {
   opacity: 1;
 }
 button:active {
-  /* box-shadow: 0px 1px 1px #de1dde; */
+  opacity: 1;
   box-shadow: 0 4px 15px -6px var(--text-decoration-btn-active);
 }
 
+/*-------------------ARTICLE AREA--------------------------*/
+.mainText {
+  display: block;
+}
+.textContainer {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 0.5em;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bgr-clr-white);
+}
+h1 {
+  font-size: 1.8rem;
+}
+article p,
+article li {
+  line-height: 1.7rem;
+  font-size: 18px;
+}
+article {
+  padding-bottom: 1rem;
+}
+/*the separator line*/
+h2::after {
+  content: "";
+  display: block;
+  width: 20px;
+  border-bottom: 4px solid var(--li-line);
+  opacity: 0.7;
+  padding-top: 0.6rem;
+}
 /*features & downlaods*/
 
 li,
@@ -154,57 +183,29 @@ strong a {
   color: var(--li-strong);
 }
 
-/*-------------------ARTICLE AREA--------------------------*/
-.mainText {
-  display: block;
-}
-.textContainer {
-  max-width: 500px;
-  margin: auto;
-  padding: 0 0.5em;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bgr-clr-white);
-}
-h1 {
-  font-size: 1.8rem;
-}
-article p,
-article li {
-  line-height: 1.6rem;
-  font-size: 18px;
-}
-article {
-  padding-bottom: 1rem;
-}
 /*---------------FOOTER BEGINS----------------------------*/
-/*the separator line*/
-h2::after {
-  content: "";
-  display: block;
-  width: 20px;
-  border-bottom: 4px solid var(--li-line);
-  opacity: 0.7;
-  padding-top: 0.6rem;
-}
+
 footer {
   text-align: center;
+  border-top: 1.5px solid var(--clr-footer-light);
 }
 .footerContainer {
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
 }
 .footer-pages {
-  border-top: 1.5px solid var(--clr-footer-light);
-}
-.footer-pages li {
-  list-style-type: none;
+  margin-top: 1.5rem;
 }
 .footer-pages a {
   color: var(--clr-all-p);
+  padding: 0 0.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
 }
+
 .footer_madeBy {
   color: var(--clr-all-p);
+  margin-bottom: 1rem;
 }
 .footer_madeBy a {
   color: var(--bgr-clr-pale);
@@ -212,21 +213,24 @@ footer {
 }
 .footer_allRights {
   color: var(--clr-footer-rights);
-  font-size: 12px;
-}
-.footer_some svg {
-  width: 28px;
-  height: 28px;
-  opacity: 0.9;
-  color: var(--clr-footer-rights);
+  font-size: 14px;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
-/*for images if there is any*/
-/* img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-} */
+.footer_some {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer_some svg {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+  color: var(--clr-all-p);
+  margin: 1rem 0;
+}
 
 @media only screen and (max-width: 650px) {
   body {
@@ -250,7 +254,9 @@ footer {
 }
 
 /*how to remove text and leave only svgs?*/
-/* @media only screen and (max-width: 450px) {
-} */
-
-/*Last merger: navigation to main 00:40*/
+@media only screen and (max-width: 450px) {
+  .footer-pages a {
+    font-size: 14px;
+    padding: 0 0.2rem;
+  }
+}
