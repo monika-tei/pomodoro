@@ -34,10 +34,6 @@ body {
   margin: 0;
   padding: 0;
 }
-/*BACKGROUNDS*/
-.task-container {
-  background-color: var(--bgr-clr-red);
-}
 
 /*TYPOGRAPHY*/
 body {
@@ -46,10 +42,8 @@ body {
   font-size: 100%;
   font-weight: 350;
 }
-
 h1,
 h2 {
-  /* color: var(--color-pink); */
   color: var(--clr-dark);
 }
 
@@ -108,7 +102,7 @@ button:hover {
 }
 button:active {
   opacity: 1;
-  box-shadow: 0 4px 15px -6px var(--text-decoration-btn-active);
+  box-shadow: 0 4px 20px -6px var(--text-decoration-btn-active);
 }
 
 /*----SCREEN AREA------*/
@@ -193,8 +187,40 @@ button:active {
   color: var(--bgr-clr-white);
   font-weight: 500;
   font-size: 18px;
-  /*add some padding underneath, or under the whole screen*/
+  padding-bottom: 1.5rem;
 }
+
+/*TASK BAR*/
+.task-screen {
+  max-width: 490px;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+.task-bar {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--bgr-clr-pale);
+  padding-bottom: 0.5rem;
+}
+.task-bar p {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--bgr-clr-white);
+  margin: 0;
+}
+.btn-task {
+  border: none;
+  background-color: var(--bgr-clr-pale);
+  color: var(--bgr-clr-white);
+  opacity: 0.7;
+  border-radius: 3px;
+  padding: 0.3rem 0.2rem;
+  cursor: pointer;
+}
+.btn-task:hover {
+  opacity: 1;
+}
+
 /*-------------------ARTICLE AREA--------------------------*/
 .mainText {
   display: block;
